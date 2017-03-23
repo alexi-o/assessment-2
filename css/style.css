@@ -1,0 +1,25 @@
+body {
+	background-color: red;
+}
+
+div {
+	background-color: white;
+	height: 200px;
+	width: 800px;
+}
+
+.greenPlayer {
+	height: 30px;
+	width: 30px;
+	top: 150px;
+	background: green;
+	position: relative;
+}
+
+.bluePlayer {
+	height: 30px;
+	width: 30px;
+	top: 100px;
+	background: blue;
+	position: absolute;
+}
