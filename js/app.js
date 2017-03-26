@@ -12,7 +12,7 @@ var checkForWin = function(){
 
 		}
 }
-
+// Switch function to move the two different players on keystrokes
 console.log("yay!");
 		$(document).keydown(function(e) {
 	    switch (e.which) {

@@ -7,33 +7,32 @@ h1, h3, p {
 	text-align: center;
 	color: red;
 }
-section {
-	position: relative;
-	clear: both;
-}
 
-.instructions {
-	width: 600px;
+p {
+	font-size: 25px;
 }
 
 div {
-	background-color: white;
 	height: 300px;
 	width: 600px;
 	position: relative;
-	margin: 0 auto;
 }
 
 .racerGame {
 	background: url("../images/swamp.jpg");
 	background-size: 100%;
+	display: black;
+}
+
+.instructions {
+	width: 500px;
 }
 
 .gameKey {
-	position: relative;
-	float: left;
-	height: 300px;
-	width: 300px;
+	position: absolute;
+	margin: 0 auto;
+	width: auto;
+	background: black;
 }
 .gameKey img {
 	max-width: 30%;
@@ -42,6 +41,14 @@ div {
 img {
 	position: relative;
 	max-width: 100%;
+}
+
+.keys {
+	position: relative;
+	display: inline;
+	float: left;
+	width: 300px;
+	margin: 0 auto;
 }
 
 .body2 {
@@ -60,11 +67,6 @@ img {
 	position: absolute;
 }
 
-@media(min-width: 1000px) {
-	h1, h3, p {
-	font-size: 2em;
-}
-div {
-	float: left;
-}
+@media (min-width: 630px) {
+
 }
