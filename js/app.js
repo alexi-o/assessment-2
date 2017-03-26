@@ -1,34 +1,35 @@
 // This function checks for a winner by running after each keystroke and checking relative position.
+var body1 = $('.body1').position().left;
+var body2 = $('.body2').position().left;
+
 var checkForWin = function(){ 
-	console.log("Checking for win!");
-	if($('.orangeCar').css('left') === '400') {
-		alert("Blue wins!");
-	} else if ($('.greenCar').css('left') === '400') {
-			alert("Green wins!");
+	console.log("Checking for Wins!");
+	if(body1 >= '400') {
+		alert("Player 2 Wins!");
+	} else if (body2 >= '400') {
+			alert("Player 1 Wins!");
 		} else {
 
 		}
 }
 
-var car1X = $('.orangeCar').offset('left');
-var car2X = $('.greenCar').offset('left');
-
 console.log("yay!");
 		$(document).keydown(function(e) {
 	    switch (e.which) {
 	    case 38:
-	        $('.greenCar').stop().animate({
+	        $('.body2').stop().animate({
 	            top: '-=40'
 	        }); 
 	        break;
 	    case 39:
-	        $('.greenCar').stop().animate({
+	        $('.body2').stop().animate({
 	            left: '+=40'
 	        });
-	        	checkForWin(); 
+	        	body2 = $('.body2').position().left;
+	        	checkForWin();
 	        break;
 	    case 40:
-	        $('.greenCar').stop().animate({
+	        $('.body2').stop().animate({
 	            top: '+=40'
 	        }); 
 	        break;
@@ -37,18 +38,19 @@ console.log("yay!");
 		$(document).keydown(function(e) {
 	    switch (e.which) {
 	    case 87:
-	        $('.orangeCar ').stop().animate({
+	        $('.body1 ').stop().animate({
 	            top: '-=40'
 	        }); 
 	        break;
 	    case 68:
-	        $('.orangeCar ').stop().animate({
+	        $('.body1 ').stop().animate({
 	            left: '+=40'
 	        });
-	        	checkForWin(); 
+	        	body1 = $('.body1').position().left; 
+	        	checkForWin();
 	        break;
 	    case 83:
-	        $('.orangeCar ').stop().animate({
+	        $('.body1 ').stop().animate({
 	            top: '+=40'
 	        }); 
 	        break;

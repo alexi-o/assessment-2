@@ -1,5 +1,19 @@
 body {
-	background-color: red;
+	background-color: black;
+}
+
+h1, h3, p {
+	position: relative;
+	text-align: center;
+	color: red;
+}
+section {
+	position: relative;
+	clear: both;
+}
+
+.instructions {
+	width: 600px;
 }
 
 div {
@@ -10,12 +24,27 @@ div {
 	margin: 0 auto;
 }
 
+.racerGame {
+	background: url("../images/swamp.jpg");
+	background-size: 100%;
+}
+
+.gameKey {
+	position: relative;
+	float: left;
+	height: 300px;
+	width: 300px;
+}
+.gameKey img {
+	max-width: 30%;
+}
+
 img {
 	position: relative;
 	max-width: 100%;
 }
 
-.greenCar {
+.body2 {
 	height: 50px;
 	width: 90px;
 	top: 200px;
@@ -23,10 +52,19 @@ img {
 	position: absolute;
 }
 
-.orangeCar {
+.body1 {
 	height: 50px;
 	width: 90px;
-	top: 50px;
+	top: 150px;
 	background: transparent;
 	position: absolute;
+}
+
+@media(min-width: 1000px) {
+	h1, h3, p {
+	font-size: 2em;
+}
+div {
+	float: left;
+}
 }
