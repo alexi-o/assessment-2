@@ -12,6 +12,13 @@ var checkForWin = function(){
 
 		}
 }
+
+$('button').click(function(){
+	console.log('Reset!!!!');
+	$('.body1').css('left', '0');
+	$('.body2').css('left', '0');
+})
+
 // Switch function to move the two different players on keystrokes
 console.log("yay!");
 		$(document).keydown(function(e) {

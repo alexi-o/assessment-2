@@ -2,7 +2,7 @@ body {
 	background-color: black;
 }
 
-h1, h3, p {
+h1, h2, p {
 	position: relative;
 	text-align: center;
 	color: red;
@@ -10,6 +10,20 @@ h1, h3, p {
 
 p {
 	font-size: 25px;
+}
+
+button {
+	padding: 20px;
+	font-size: 30px;
+	color: red;
+	border-radius: 20px;
+	position: relative;
+	left: 40px;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
 }
 
 div {
@@ -21,7 +35,9 @@ div {
 .racerGame {
 	background: url("../images/swamp.jpg");
 	background-size: 100%;
-	display: black;
+	position: relative;
+	margin: 0 auto;
+	border: 2px solid red;
 }
 
 .instructions {
@@ -29,9 +45,8 @@ div {
 }
 
 .gameKey {
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
-	width: auto;
 	background: black;
 }
 .gameKey img {
@@ -67,6 +82,10 @@ img {
 	position: absolute;
 }
 
-@media (min-width: 630px) {
-
+@media (max-width: 799px){
+	.keys {
+		display: block;
+		float: left;
+		clear: both;
+	}
 }
