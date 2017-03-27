@@ -1,12 +1,32 @@
-body {
-	background-color: black;
+header {
+	height: 100px;
+	background: #900;
+	width: auto;
+}
+
+header h1 {
+	position: absolute;
+	top: 48px;
+	color: white;
+	left: 20px;
+}
+
+header h3 {
+	color: #fc9;
+	position: absolute;
+	left: 20px;
+	top: 37px;
+}
+
+.inner-body {
+	background: #2b2b2b;
 }
 
 h1, h2, p {
 	position: relative;
 	text-align: center;
 	color: red;
-	font-family: 'Griffy', cursive;
+	font-family: 'Lucida Grande',Verdana,sans-serif;
 }
 
 a {
