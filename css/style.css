@@ -6,6 +6,7 @@ h1, h2, p {
 	position: relative;
 	text-align: center;
 	color: red;
+	font-family: 'Griffy', cursive;
 }
 
 p {
