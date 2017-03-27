@@ -47,11 +47,11 @@ div {
 	margin: 0 auto;
 	border: 2px solid red;
 }
-
+/*Instructions to appear right of the game keys*/
 .instructions {
 	width: 500px;
 }
-
+/*Details which key each player needs to push to move their body*/
 .gameKey {
 	position: relative;
 	margin: 0 auto;
