@@ -9,10 +9,17 @@ h1, h2, p {
 	font-family: 'Griffy', cursive;
 }
 
+a {
+	color: red;
+	vertical-align: middle;
+	line-height: 300px;
+	font-size: 60px;
+}
+
 p {
 	font-size: 25px;
 }
-
+/*Reset button to move bodies back to the beginning*/
 button {
 	padding: 20px;
 	font-size: 30px;
@@ -32,7 +39,7 @@ div {
 	width: 600px;
 	position: relative;
 }
-
+/*Main game box with swamp set as the background*/
 .racerGame {
 	background: url("../images/swamp.jpg");
 	background-size: 100%;
@@ -58,7 +65,7 @@ img {
 	position: relative;
 	max-width: 100%;
 }
-
+/*Shows which keys each player needs to push to move*/
 .keys {
 	position: relative;
 	display: inline;
@@ -66,7 +73,7 @@ img {
 	width: 300px;
 	margin: 0 auto;
 }
-
+/*Native American?: Player 2*/
 .body2 {
 	height: 50px;
 	width: 90px;
@@ -74,7 +81,7 @@ img {
 	background: transparent;
 	position: absolute;
 }
-
+/*Scientist: Player 1*/
 .body1 {
 	height: 50px;
 	width: 90px;
@@ -82,11 +89,12 @@ img {
 	background: transparent;
 	position: absolute;
 }
-
+/*Media query to move the intructions below the game key section when the screen shrinks*/
 @media (max-width: 799px){
 	.keys {
 		display: block;
 		float: left;
 		clear: both;
+		width: auto;
 	}
 }
